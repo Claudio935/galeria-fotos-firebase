@@ -32,7 +32,7 @@ function App() {
 
     Promise.all(itemsReference.map(async (item) => {
       return getDownloadURL(item)
-    })).then((item1) => list.push(...item1)).then(() => setUrl([...list]))
+    })).then((reference) => list.push(...reference)).then(() => setUrl([...list]))
 
     if (itemsReference !== undefined) setNameImage(itemsReference)
 
